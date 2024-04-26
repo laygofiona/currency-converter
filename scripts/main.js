@@ -1,4 +1,3 @@
-
 // Selectors
 
 const amountInput = document.getElementsByTagName("input")[0];
@@ -103,7 +102,6 @@ function handleErrors(response) {
   // Async function to extract data from foreign currency API
 const convertCurrency = async (from, to, amount) => {
     
-    const API_key = "fca_live_84UPAWT4d1UO562qzLbI3NLmuflxfqtPEGIuwPc7";
     const url = `https://api.freecurrencyapi.com/v1/latest?apikey=${API_key}&currencies=${to}&base_currency=${from}`;
     // Send request using Fetch API
     const response = await fetch(url);
